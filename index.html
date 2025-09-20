@@ -10,8 +10,8 @@
 
 <body class="bg-black p-1 text-white w-full">
     <div class="container flex mx-auto max-w-6xl ">
-        <div class="left-container hidden sm:w-[100px] md:w-full lg:block space-y-2 p-4 ">
-            <nav class="sticky top-0 left-0 side-nav w-1/2 md:w-full space-y-2 p-4">
+    <div class="left-container  hidden md:block w-[100px] xl:w-1/2  space-y-2 p-4">
+            <nav class="sticky md:w[100px] top-0 left-0 side-nav   space-y-2 p-4">
                 <div class="main-logo flex pl-2 pr-2 w-fit items-center space-x-2  cursor-pointer rounded-xl">
                     <div class="logo  h-8 w-8   rounded-4xl p-[6px] ">
                         <svg viewBox="0 0 24 24" aria-hidden="true" class="fill-black invert-100">
@@ -36,7 +36,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="home-text hidden md:block">Home</span>
+                            <span class="home-text hidden xl:block">Home</span>
                         </li>
                         <li
                             class="explore flex  pl-2 pr-2 w-fit items-center space-x-2 bg-black cursor-pointer rounded-xl hover:bg-[rgba(22,21,21,0.81)]">
@@ -49,7 +49,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="explore-text hidden md:block">Explore</span>
+                            <span class="explore-text hidden xl:block">Explore</span>
                         </li>
                         <li
                             class="notification flex pl-2 pr-2 w-fit items-center  space-x-2 bg-black cursor-pointer rounded-xl hover:bg-[rgba(22,21,21,0.81)]">
@@ -63,7 +63,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="notification-text hidden md:block">Notification</span>
+                            <span class="notification-text hidden xl:block">Notification</span>
                         </li>
                         <li
                             class="message flex pl-2 pr-2 w-fit items-center space-x-2 bg-black  rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -76,7 +76,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="message-text hidden md:block">Message</span>
+                            <span class="message-text hidden xl:block">Message</span>
                         </li>
                         <li
                             class="grok flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -89,7 +89,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="grok-text hidden md:block">GROK</span>
+                            <span class="grok-text hidden xl:block">GROK</span>
                         </li>
                         <li
                             class="lists flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl  cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -102,10 +102,10 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="lists-text hidden md:block">Lists</span>
+                            <span class="lists-text hidden xl:block">Lists</span>
                         </li>
                         <li
-                            class="bookmarks flex pl-2 pr-2 w-fit  items-center space-x-2 bg-black  rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
+                            class="bookmarks flex pl-2 pr-2 w-fit text-nowrap  items-center space-x-2 bg-black  rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
                             <div class="bookmarks-logo h-8 w-8  rounded-4xl p-[6px]  flex justify-center items-center">
                                 <svg viewBox="0 0 24 24" aria-hidden="true" class="invert-100" data-testid="icon">
                                     <g>
@@ -115,7 +115,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="bookmarks-text hidden md:block">Book Marks</span>
+                            <span class="bookmarks-text hidden xl:block">Book Marks</span>
                         </li>
                         <li
                             class="community flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -128,7 +128,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="community-text hidden md:block">Community</span>
+                            <span class="community-text hidden xl:block">Community</span>
                         </li>
                         <li
                             class="premium flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -141,7 +141,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="premium-text hidden md:block">Premium</span>
+                            <span class="premium-text hidden xl:block">Premium</span>
                         </li>
                         <li
                             class="bg-black flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -154,7 +154,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="profile-text hidden md:block">Profile</span>
+                            <span class="profile-text hidden xl:block">Profile</span>
                         </li>
                         <li
                             class="more flex pl-2 pr-2 w-fit items-center space-x-2 bg-black rounded-xl cursor-pointer hover:bg-[rgba(22,21,21,0.81)]">
@@ -167,19 +167,23 @@
                                     </g>
                                 </svg>
                             </div>
-                            <span class="more-text hidden md:block">More</span>
+                            <span class="more-text hidden xl:block">More</span>
                         </li>
-                        <li class="w-fit">
-                            <div class="post-btn text-center">
-                                <button class="p-2 w-full border bg-blue-400 font-bold border-white rounded-full">Post</button>
+                        <li class="flex item-center w-full pl-2.5">
+                            <div class="post-btn text-center md:w-full">
+                                <button class="p-2 w-full border hidden xl:block bg-blue-400 font-bold border-white rounded-full">Post</button>
+                                <div class="xl:hidden md:block feather-logo bg-white h-8 w-8  rounded-4xl p-[6px]  flex justify-center items-center">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true" class="" style="color: rgb(15, 20, 25);"><g><path d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path></g></svg>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="mid main-content-container  w-full border border-x-[rgb(51,54,57)] border-y-black">
-            <div class="tabs h-20 flex w-full bg-gray-950/80 backdrop-blur-md justify-between sticky top-0  border border-y-[rgb(51,54,57)] border-x-black">
+        <div class="mid main-content-container  sm:w-full border border-x-[rgb(51,54,57)] border-y-black">
+            <div
+                class="tabs h-20 flex w-full bg-gray-950/80 backdrop-blur-md justify-between sticky top-0  border border-y-[rgb(51,54,57)] border-x-black">
                 <div class="foryou-tab  w-1/2 text-white text-center p-4   font-bold">For You</div>
                 <div class="following-tab w-1/2 text-white text-center p-4  ">Following</div>
             </div>
@@ -318,7 +322,7 @@
                                 exercitationem! Sint modi praesentium aperiam placeat nulla ullam aspernatur quasi?
                                 Laboriosam quos facere dolor velit eligendi assumenda ab accusantium officiis, eius
                                 odit.</div>
-                                <img class="rounded-md" src="/img/post1.png" alt="">
+                            <img class="rounded-md" src="/img/post1.png" alt="">
                         </div>
                         <div class="attachment-icons flex items-center w-full space-x-1">
                             <!-- First SVG -->
@@ -473,7 +477,7 @@
                                 exercitationem! Sint modi praesentium aperiam placeat nulla ullam aspernatur quasi?
                                 Laboriosam quos facere dolor velit eligendi assumenda ab accusantium officiis, eius
                                 odit.</div>
-                                 <img class="rounded-md" src="/img/post2.png" alt="">
+                            <img class="rounded-md" src="/img/post2.png" alt="">
                         </div>
                         <div class="attachment-icons flex items-center w-full space-x-1">
                             <!-- First SVG -->
@@ -572,7 +576,7 @@
                     </div>
                 </div>
             </div>
-              <div class="post-container">
+            <div class="post-container">
                 <div class="flex p-2 gap-2">
                     <span class="profile-picture">
                         <img src="/img/profile.png" alt="profile-picture"
@@ -628,8 +632,12 @@
                                 exercitationem! Sint modi praesentium aperiam placeat nulla ullam aspernatur quasi?
                                 Laboriosam quos facere dolor velit eligendi assumenda ab accusantium officiis, eius
                                 odit.</div>
-                                <iframe class="rounded-md p-2 h-full w-full" src="https://www.youtube.com/embed/iegMqFnVocA" title="X.com (Twitter) Clone using Tailwind CSS | Sigma Web Development Course - Tutorial #101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                
+                            <iframe class="rounded-md p-2 h-full w-full" src="https://www.youtube.com/embed/iegMqFnVocA"
+                                title="X.com (Twitter) Clone using Tailwind CSS | Sigma Web Development Course - Tutorial #101"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                         </div>
                         <div class="attachment-icons flex items-center w-full space-x-1">
                             <!-- First SVG -->
@@ -729,7 +737,7 @@
                 </div>
             </div>
         </div>
-        <div class="right extra-data-container  w-full hidden md:block">
+        <div class="right extra-data-container  w-full hidden lg:block">
             <div class="search-container h-20 sticky bg-black top-0 space-y-2 flex flex-col justify-center p-4">
                 <div class="search-box  flex items-center border border-[rgb(51,54,57)] p-2 space-x-1 rounded-full">
                     <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-[rgb(51,54,57)]">
