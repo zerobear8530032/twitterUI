@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black p-1 text-white w-full">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 
 <body class="bg-black p-1 text-white w-full">
     <div class="container flex mx-auto max-w-6xl ">
-        <div class="left-container  md:w-1/2 space-y-2 p-4 ">
-            <nav class="sticky top-0 left-0 side-nav w-full space-y-2 p-4">
+        <div class="left-container hidden sm:w-[100px] md:w-full lg:block space-y-2 p-4 ">
+            <nav class="sticky top-0 left-0 side-nav w-1/2 md:w-full space-y-2 p-4">
                 <div class="main-logo flex pl-2 pr-2 w-fit items-center space-x-2  cursor-pointer rounded-xl">
                     <div class="logo  h-8 w-8   rounded-4xl p-[6px] ">
                         <svg viewBox="0 0 24 24" aria-hidden="true" class="fill-black invert-100">
@@ -169,10 +169,12 @@
                             </div>
                             <span class="more-text hidden md:block">More</span>
                         </li>
+                        <li class="w-fit">
+                            <div class="post-btn text-center">
+                                <button class="p-2 w-full border bg-blue-400 font-bold border-white rounded-full">Post</button>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-                <div class="post-btn text-center">
-                    <button class="p-2 w-full border bg-blue-400 font-bold border-white rounded-full">Post</button>
                 </div>
             </nav>
         </div>
@@ -267,7 +269,7 @@
                         <img src="/img/profile.png" alt="profile-picture"
                             class="h-10 w-10 max-h-10 max-w-10 rounded-full">
                     </span>
-                    <div class="post-content ">
+                    <div class="post-content w-full max-w-full overflow-hidden">
                         <div class="post-author-data flex space-x-2 w-full">
                             <div class="flex justify-between w-full">
                                 <div class="flex items-center gap-0.5">
@@ -310,7 +312,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="post-content flex flex-col gap-10 pr-5">
                             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae quis commodi
@@ -422,7 +423,7 @@
                         <img src="/img/profile.png" alt="profile-picture"
                             class="h-10 w-10 max-h-10 max-w-10 rounded-full">
                     </span>
-                    <div class="post-content ">
+                    <div class="post-content w-full max-w-full overflow-hidden">
                         <div class="post-author-data flex space-x-2 w-full">
                             <div class="flex justify-between w-full">
                                 <div class="flex items-center gap-0.5">
@@ -577,7 +578,7 @@
                         <img src="/img/profile.png" alt="profile-picture"
                             class="h-10 w-10 max-h-10 max-w-10 rounded-full">
                     </span>
-                    <div class="post-content ">
+                    <div class="post-content w-full max-w-full overflow-hidden">
                         <div class="post-author-data flex space-x-2 w-full">
                             <div class="flex justify-between w-full">
                                 <div class="flex items-center gap-0.5">
@@ -728,7 +729,7 @@
                 </div>
             </div>
         </div>
-        <div class="right extra-data-container  w-3/4 hidden md:block">
+        <div class="right extra-data-container  w-full hidden md:block">
             <div class="search-container h-20 sticky bg-black top-0 space-y-2 flex flex-col justify-center p-4">
                 <div class="search-box  flex items-center border border-[rgb(51,54,57)] p-2 space-x-1 rounded-full">
                     <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-[rgb(51,54,57)]">
